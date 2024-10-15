@@ -10,5 +10,5 @@ class Recipe(models.Model):
   recipe_slug = models.SlugField(unique = True)
 
 class Ingredients(models.Model):
-  recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name = "recipe_ingredents")
+  recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name = "recipe_ingreidents")
   ingredent_name = models.CharField(max_length = 100)
